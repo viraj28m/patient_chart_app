@@ -1,0 +1,37 @@
+{
+  "configurations" : [
+    {
+      "id" : "04FBEA91-5C4B-4F45-A818-56A2ED9D55F9",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:patient_chart_app.xcodeproj",
+      "identifier" : "F28EC9162D344C1200A3088A",
+      "name" : "patient_chart_app"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:patient_chart_app.xcodeproj",
+        "identifier" : "F28EC9262D344C1500A3088A",
+        "name" : "patient_chart_appTests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:patient_chart_app.xcodeproj",
+        "identifier" : "F28EC9302D344C1500A3088A",
+        "name" : "patient_chart_appUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

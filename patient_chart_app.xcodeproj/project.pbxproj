@@ -27,6 +27,7 @@
 		F28EC9172D344C1200A3088A /* patient_chart_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = patient_chart_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F28EC9272D344C1500A3088A /* patient_chart_appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = patient_chart_appTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F28EC9312D344C1500A3088A /* patient_chart_appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = patient_chart_appUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2A5CD242D3481210054E169 /* patient_chart_app.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = patient_chart_app.xctestplan; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -75,6 +76,7 @@
 		F28EC90E2D344C1200A3088A = {
 			isa = PBXGroup;
 			children = (
+				F2A5CD242D3481210054E169 /* patient_chart_app.xctestplan */,
 				F28EC9192D344C1200A3088A /* patient_chart_app */,
 				F28EC92A2D344C1500A3088A /* patient_chart_appTests */,
 				F28EC9342D344C1500A3088A /* patient_chart_appUITests */,
