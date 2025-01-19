@@ -15,13 +15,27 @@ struct PatientDetailView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
             // Section for displaying patient information
-            Text(patient.patientNameandAge())
-                .font(.largeTitle)
-            Text("MRN: \(patient.MRN.uuidString)")
-            Text(String(format: "Height: %.1f cm", patient.height))
-            Text(String(format: "Weight: %.1f lbs", patient.weight))
+            Group {
+                VStack(alignment: .leading, spacing: 8) {
+                    Text("\(patient.patientNameandAge())")
+                        .font(.title2)
+                        .bold()
+                    Divider()
+                    Text("MRN: \(patient.MRN.uuidString)")
+                        .font(.body)
+                    Divider()
+                    Text(String(format: "Height: %.1f cm", patient.height))
+                        .font(.body)
+                    Divider()
+                    Text(String(format: "Weight: %.1f lbs", patient.weight))
+                        .font(.body)
+                    Divider()
+                }
+            }
+            
             if let bloodType = patient.bloodType {
                 Text("Blood Type: \(bloodType.rawValue)")
+                    .font(.body)
             }
             
             Divider()
