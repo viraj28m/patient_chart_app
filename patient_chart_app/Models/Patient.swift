@@ -7,15 +7,16 @@
 import Foundation
 
 // Class to represent a patient in the EMR
-class Patient {
+class Patient : ObservableObject, Identifiable {
     let MRN: UUID
+    var id: UUID {MRN}
     let firstName: String
     let lastName: String
     let DOB: Date
-    var height: Double // cm
-    var weight: Double // lbs
-    var bloodType: BloodType?
-    private(set) var medications: [Medication] = []
+    @Published var height: Double // cm
+    @Published var weight: Double // lbs
+    @Published var bloodType: BloodType?
+    @Published var medications: [Medication] = []
     
     init(firstName: String, lastName: String, DOB: Date, height: Double, weight: Double, bloodType: BloodType? = nil) {
             self.MRN = UUID()

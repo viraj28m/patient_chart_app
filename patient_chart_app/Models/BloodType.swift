@@ -6,7 +6,7 @@
 //
 
 // Representation for blood types
-enum BloodType: String {
+enum BloodType: String, CaseIterable {
     case A_Positive = "A+"
     case A_Negative = "A-"
     case B_Positive = "B+"
