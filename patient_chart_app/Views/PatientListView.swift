@@ -8,8 +8,12 @@
 import SwiftUI
 
 struct PatientListView: View {
-    @StateObject var patientData = PatientData()
     @State private var showingNewPatientForm = false
+    @State var patientData = PatientData()
+    
+    init(patientData: PatientData = PatientData()) {
+        _patientData = State(initialValue: patientData)
+    }
     
     var body : some View {
         NavigationStack {

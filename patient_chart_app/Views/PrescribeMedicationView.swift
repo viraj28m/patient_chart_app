@@ -9,7 +9,7 @@ import SwiftUI
 
 struct PrescribeMedicationView: View {
     @Environment(\.dismiss) var dismiss
-    @ObservedObject var patient: Patient
+    var patient: Patient
     
     // State variables for form inputs
     @State private var name = ""

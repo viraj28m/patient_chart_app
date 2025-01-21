@@ -6,10 +6,11 @@
 //
 
 import Foundation
+import SwiftUI
 
-class PatientData: ObservableObject {
-    @Published var patients: [Patient] = []
-    @Published var searchQuery: String = ""
+@Observable class PatientData {
+    var patients: [Patient] = []
+    var searchQuery: String = ""
     
     var filteredPatients: [Patient] {
         if searchQuery.isEmpty {

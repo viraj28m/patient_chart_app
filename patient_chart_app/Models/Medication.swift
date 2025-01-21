@@ -7,7 +7,7 @@
 import Foundation
 
 // Class to represent a medication prescribed to a patient in the EMR
-class Medication: Equatable {
+@Observable class Medication: Equatable {
     let id = UUID()
     let datePrescribed: Date
     let name: String

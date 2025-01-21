@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct PatientDetailView: View {
-    @ObservedObject var patient: Patient
-    @ObservedObject var patientData: PatientData
+    var patient: Patient
+    var patientData: PatientData
     @State private var showingMedicationForm = false // Determines whether the PrescribeMedicationView is showing
     
     var body: some View {
